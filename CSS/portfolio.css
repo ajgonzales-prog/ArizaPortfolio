@@ -1,0 +1,193 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fcf8f2;
+  color: #222222;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+/* Navbar Layout */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 0.95rem;
+}
+
+.nav-links a.active, .nav-links a:hover {
+  color: #0d7a5f;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.portfolio-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px 5% 50px 5%;
+}
+
+.portfolio-container {
+  max-width: 900px;
+  width: 100%;
+}
+
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.portfolio-header h1 {
+  font-size: 2.5rem;
+  color: #0d7a5f;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #555555;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.filter-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#searchInput {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  border: 1px solid #d1c7bd;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  outline: none;
+  background-color: #ffffff;
+}
+
+#searchInput:focus {
+  border-color: #0d7a5f;
+  box-shadow: 0 0 5px rgba(13, 122, 95, 0.3);
+}
+
+.category-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #e5ddd5;
+  color: #222222;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+  background-color: #0d7a5f;
+  color: #ffffff;
+}
+
+/* Malalaking Banner Buttons Style (Eksakto sa iyong pangalawang larawan) */
+.banner-links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.banner-link-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 650px;
+  background-color: #d8d0c5; /* Neutral gray-cream tone */
+  color: #222222;
+  padding: 16px 25px;
+  text-decoration: none;
+  border-radius: 35px; /* Pill/Capsule shape */
+  font-size: 1.05rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.banner-link-btn:hover {
+  background-color: #0d7a5f;
+  color: #ffffff;
+}
+
+.banner-link-btn:hover .banner-arrow {
+  transform: translateX(5px);
+}
+
+.banner-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.banner-icon {
+  font-size: 1.3rem;
+  color: #222222;
+}
+
+.banner-link-btn:hover .banner-icon,
+.banner-link-btn:hover .banner-arrow {
+  color: #ffffff;
+}
+
+.banner-arrow {
+  font-size: 1.2rem;
+  transition: transform 0.2s;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 20px;
+  }
+  .banner-link-btn {
+    padding: 14px 20px;
+    font-size: 0.95rem;
+  }
+}

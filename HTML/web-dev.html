@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Ariza Gonzales</title>
+  <link rel="stylesheet" href="/CSS/web-dev.css">
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about-me.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="web-dev.html" class="active">Projects</a></li>
+        <li><a href="cv.html">Curriculum Vitae</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Web Development Section -->
+  <main class="webdev-section">
+    <div class="webdev-container">
+      
+      <!-- Header Area with Search Bar -->
+      <div class="webdev-header">
+        <h1>Projects</h1>
+        <p class="subtitle">Explore my web-based applications, systems, and digital designs.</p>
+        
+        <!-- Live Search Bar -->
+        <div class="search-box">
+          <input type="text" id="webSearchInput" placeholder="Search web projects (e.g. ULAT CCC)..." aria-label="Search web projects">
+        </div>
+      </div>
+
+      <!-- Projects Grid (Rendered via JavaScript) -->
+      <div class="webdev-grid" id="webDevGrid">
+        <!-- Project Cards dynamically injected here -->
+      </div>
+
+    </div>
+  </main>
+
+  <script src="/JS/web-dev.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications | Ariza Gonzales</title>
+  <link rel="stylesheet" href="/CSS/certifications.css">
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about-me.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="certifications.html" class="active">Certifications</a></li>
+        <li><a href="web-dev.html">Projects</a></li>
+        <li><a href="cv.html">Curriculum Vitae</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Certifications Section -->
+  <main class="certs-section">
+    <div class="certs-container">
+      
+      <!-- Header Area with Search Bar (Elevated Position) -->
+      <div class="certs-header">
+        <h1>My Certifications</h1>
+        <p class="subtitle">Official credentials and national certifications.</p>
+        
+        <!-- Live Search Bar -->
+        <div class="search-box">
+          <input type="text" id="certSearchInput" placeholder="Search certifications (e.g. NC II)..." aria-label="Search certifications">
+        </div>
+      </div>
+
+      <!-- 8 Display Boxes Grid -->
+      <div class="certs-grid" id="certsGrid">
+        <!-- 8 Boxes dynamically rendered via JS -->
+      </div>
+
+    </div>
+  </main>
+
+  <script src="/JS/certifications.js"></script>
+</body>
+</html>

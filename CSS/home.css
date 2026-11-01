@@ -1,0 +1,209 @@
+/* Basic Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fcf8f2; /* Cream Background */
+  color: #222222;
+  line-height: 1.5;
+}
+
+/* Navbar Layout */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 0.95rem;
+}
+
+.nav-links a.active, .nav-links a:hover {
+  color: #0d7a5f;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hero Section Layout */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 5%;
+  min-height: 80vh;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 100%;
+  gap: 60px;
+}
+
+/* Arch Photo Frame */
+.hero-image-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.arch-frame {
+  width: 320px;
+  height: 400px;
+  background-color: #0d7a5f; /* Green Background */
+  border-top-left-radius: 180px;
+  border-top-right-radius: 180px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.arch-frame img {
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+}
+
+/* Hero Text Content */
+.hero-content {
+  flex: 1.2;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: #0d7a5f; /* Green Text */
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  color: #444444;
+  margin-bottom: 25px;
+  max-width: 450px;
+}
+
+/* Dark Pill Buttons */
+.cta-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.dark-pill-btn {
+  background-color: #383e42; /* Dark Gray Pill */
+  color: #ffffff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.dark-pill-btn:hover {
+  background-color: #212529;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  font-size: 1.8rem;
+  color: #0077ff; /* Default blue for FB/LinkedIn */
+  text-decoration: none;
+}
+
+.social-icons a:nth-child(2) {
+  color: #e1306c; /* Instagram Pink */
+}
+
+.social-icons a:nth-child(4) {
+  color: #ea4335; /* Email Red/Orange */
+}
+
+/* Responsive Design for Tablets and Mobile Screens */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+
+  .navbar {
+    justify-content: flex-end;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #fcf8f2;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .arch-frame {
+    width: 260px;
+    height: 330px;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

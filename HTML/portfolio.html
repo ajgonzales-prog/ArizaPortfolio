@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio & Projects | Ariza Gonzales</title>
+  <link rel="stylesheet" href="/CSS/portfolio.css">
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about-me.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="web-dev.html">Projects</a></li>
+        <li><a href="cv.html">Curriculum Vitae</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Portfolio Section -->
+  <main class="portfolio-section">
+    <div class="portfolio-container">
+      
+      <!-- Header & Search Bar Area -->
+      <div class="portfolio-header">
+        <h1>My Portfolio & Certifications</h1>
+        <p class="subtitle">Explore my digital projects and professional TESDA credentials.</p>
+        
+        <div class="filter-controls">
+  <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Search portfolio or certificates..." 
+    aria-label="Search portfolio"
+  >
+  <div class="category-buttons" id="categoryButtons">
+    <button class="filter-btn active" data-category="All">All</button>
+    <button class="filter-btn" data-category="Web Development">Web Dev</button>
+    <button class="filter-btn" data-category="Certifications">Certifications</button>
+  </div>
+</div>
+
+      <!-- Project Cards Grid (Rendered dynamically via JavaScript) -->
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Project cards will be injected here -->
+      </div>
+
+      <!-- Dynamic Banner Buttons Container -->
+      <div class="banner-links-container" id="bannerLinksContainer">
+      </div>
+
+    </div>
+  </main>
+
+  <script src="/JS/portfolio.js"></script>
+</body>
+</html>

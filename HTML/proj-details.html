@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details & Screenshots | Ariza Gonzales</title>
+  <link rel="stylesheet" href="/CSS/proj-details.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <nav class="nav-container">
+      <a href="web-dev.html" class="back-btn">← Back to Web Dev</a>
+      
+      <!-- Search Bar Control -->
+      <div class="search-controls">
+        <input type="text" id="detailsSearchInput" placeholder="Search project details..." aria-label="Search projects">
+      </div>
+    </nav>
+  </header>
+
+  <main class="details-container">
+    
+    <!-- 1. ULAT CCC Portal (4 Boxes) -->
+    <section id="ulat-section" class="project-block">
+      <h2>ULAT CCC Portal</h2>
+      <p>A comprehensive portal system featuring secure authentication, real-time reporting, and an admin dashboard. <em>(Developed collaboratively with Group [Team Yey])</em></p>
+      <div class="screenshots-grid-4">
+        <img src="/HTML/images/ulat-login.gif" alt="Screenshot 1">
+        <img src="/HTML/images/report.gif" alt="Screenshot 2">
+        <img src="/HTML/images/admin.webp" alt="Screenshot 3">
+        <img src="/HTML/images/concern.webp" alt="Screenshot 4">
+      </div>
+    </section>
+
+    <hr class="divider" id="divider-1">
+
+    <!-- 2. JL's Restobar (4 Boxes) -->
+    <section id="jls-section" class="project-block">
+      <h2>JL's Restobar QR Ordering System</h2>
+      <p>A modern contactless ordering platform utilizing QR codes for self-service, table reservations, and live tracking. <em>(Software Engineering Project Team)</em></p>
+      <div class="screenshots-grid-4">
+        <img src="/HTML/images/JL-login.jfif" alt="Screenshot 1">
+        <img src="/HTML/images/JL-online.jfif" alt="Screenshot 2">
+        <img src="/HTML/images/JL-menu.jfif" alt="Screenshot 3">
+        <img src="/HTML/images/JL-track.jfif" alt="Screenshot 4">
+      </div>
+    </section>
+
+    <hr class="divider" id="divider-2">
+
+    <!-- 3. Logo for Gonzales Aesthetics (2 Boxes) -->
+    <section id="portfolio-section" class="project-block">
+      <h2>Logo for Gonzales Aesthetics</h2>
+      <p>A polished and sophisticated chrome-styled brand identity design featuring a stylized metallic clothes hanger monogram alongside elegant typography.</p>
+      <div class="screenshots-grid-2">
+        <img src="/HTML/images/logo-horizontal.png" alt="Screenshot 1">
+        <img src="/HTML/images/logo-stacked.png" alt="Screenshot 2">
+      </div>      
+    </section>
+
+    <hr class="divider" id="divider-3">
+
+    <!-- 4. Alay Lakad Pubmat (Box Layout) -->
+    <section id="alay-lakad-section" class="project-block">
+      <h2>Alay Lakad Pubmat</h2>
+      <p>A promotional publication material (pubmat) design created for the Alay Lakad 2027 community walk event, featuring custom dynamic typography, road vector graphics, and event details.</p>
+      <div class="screenshots-grid-2">
+        <img src="/HTML/images/alay-lakad.png" alt="Alay Lakad Pubmat" style="object-fit: contain; width: 100%;">
+      </div>
+    </section>
+
+    <!-- No Results Message -->
+    <div id="noResults" class="no-results" style="display: none;">
+      No project details found matching your search.
+    </div>
+
+  </main>
+
+  <script src="/JS/proj-details.js"></script>
+</body>
+</html>
